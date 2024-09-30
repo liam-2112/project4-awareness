@@ -1,0 +1,43 @@
+/*google font imports*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
+
+/*asterisk wildcard selector to override default styles added by the browser*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*general styles*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*generic project styles*/
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+/* header */
+header {
+    background-color: orange;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 3px 4px rgb(182, 137, 53);
+}
+
+
+/* main content */
+main {
+    background-color: black;
+    /*make the main element take up surplus space to push down the footer*/
+    flex: 1 0 auto;
+}
+
+/* footer */
+footer {
+    background-color: orange;
+}
