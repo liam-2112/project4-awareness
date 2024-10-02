@@ -21,12 +21,11 @@ body {
 
 /* header */
 header {
-    background-color: orange;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 3px 4px rgb(182, 137, 53);
+    box-shadow: 0 3px 4px rgb(109, 103, 91);
 }
 
 
