@@ -39,5 +39,23 @@ main {
 
 /* footer */
 footer {
-    background-color: orange;
+    background-color:  #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    max-height: 10%;
 }
+
+footer > div > a {
+    width: 40px;
+    margin: 0 10px;
+}
+
+footer > div > a > img {
+    max-height: 2%;
+    max-width: 2%;
+}
+
+footer > p {
+    margin-top: 10px;
+}
+
