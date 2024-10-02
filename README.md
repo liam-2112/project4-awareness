@@ -76,6 +76,12 @@ I have used a HTML [Validator](https://validator.w3.org/) to find that i have a 
 I have used a CSS [Validator](https://jigsaw.w3.org/) to get a all clear message
 ![CSS Clear](/documentation/css-check.png)
 
+### Creditation
+I used a favicon generator by [favicon](https://favicon.io/favicon-generator/)
+Use of w3Schools
+Use of bootstrap
+Use of gitpod and github
+
 ### Future Features
 Due to being ill i have ran out of time.
 Future updates to the readme to be implemente.
