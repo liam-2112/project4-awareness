@@ -19,10 +19,41 @@
 </head>
 
 <body>
-    
+    <!--Header section-->
+    <header>
+    </header>
+
+    <!--main section-->
+    <main>
+    </main>
+
+<!--footer section-->
+ <footer>
+ </footer>
+
+    <!--Back to top button on scroll-->
+    <button class="btn btn-primary scroll-top-btn" id="scrollTopBtn">Back to Top</button>
+
     <!--Bootstrap script-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Show the scroll-to-top button when scrolling down
+        window.onscroll = function() {
+            const button = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        // Scroll to top function
+        document.getElementById("scrollTopBtn").onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
 </body>
 </html>
