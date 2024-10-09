@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+/* search on page highlight color */
+.highlight {
+            background-color: yellow; /* Highlight color */
+        }
+
 /*general styles*/
 body {
     min-height: 100vh;
@@ -26,6 +31,16 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 3px 4px rgb(109, 103, 91);
+}
+
+.logo-text {
+    color: white;
+    font-size: x-large;
+}
+
+.logo-size {
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
 

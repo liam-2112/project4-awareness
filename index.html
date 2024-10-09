@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Web Tab Name-->
-    <title>HeadSpace</title>
+    <title>HeadSpace | Mental Health Awareness</title>
     <!--meta tags for search engines-->
     <meta name="description"
         content="i need help with myself. am i ill. i want to look at mental health. how to be more aware. help me.">
@@ -27,25 +27,23 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <!--Title on the left-->
-                <a class="navbar-brand" href="index.html">HeadSpace</a>
+                <a class= "logo-text logo-size mt-2" href="index.html">HeadSpace</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <!--Home link-->
-                    <button class="btn btn-primary ml-2"><a href="index.html">Home</a></button>
+                    <a href="index.html" class="btn btn-primary ml-2 mt-2 d-flex justify-content-around">Home</a>
                     <!--About us link-->
-                    <button class="btn btn-primary ml-2"><a href="/pages/aboutus.html">About Us</a></button>
+                    <a href="/pages/aboutus.html" class="btn btn-primary ml-2 mt-2 d-flex justify-content-around">About Us</a>
                     <!--register link-->
-                    <button class="btn btn-primary ml-2"><a href="/pages/register.html">Register</a></button>
+                    <a href="/pages/register.html" class="btn btn-primary ml-2 mt-2 d-flex justify-content-around">Register</a>
                     <!--link to the accordian section-->
-                    <button class="btn btn-danger ml-2"><a href="#gethelp">HELP NOW</a></button>
+                    <a href="#gethelp" class="btn btn-danger ml-2 mt-2 d-flex justify-content-around">HELP NOW</a>
                     <!--Search bar-->
-                    <form class="form-inline ml-auto">
-                        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button onclick="search()">Search</button>
                 </div>
             </div>
         </nav>
@@ -58,20 +56,24 @@
         <div class="jumbotron text-center">
             <img src="https://img.tastelife.tv/assets/uploads/2022/01/New_Zealand_-_AMAZING_Beautiful_Nature_with_Relaxing_Music__Soundscapes_9x10-684x480.jpg" 
             alt="A tree in the middle of a calming lake">
-            <h1 class="display-4">Welcome to HeadSpace</h1>
-            <p class="lead">Find the support and information that you need.</p>
+            <div id="content">
+              <h1 class="display-4">Welcome to HeadSpace</h1>
+             <p class="lead">Find the support and information that you need.</p>
+            </div>
         </div>
 
+        <div id="content">
         <h1>Information on Mental Health</h1>
         <p>In this section you can find information on different mental health issues by clicking the button within the type of illness</p>
+        </div>
 
         <!--Card section-->
         <!--Card 1 section-->
-        <div class="container-fluid">
+        <div class="container">
             <div class="card" style="width:300px">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEEKA_1WQknhGso0esJ5tVeW0dFegsXjQwqA&s" 
               alt="Image" style="width:100%">
-              <div class="card-body">
+              <div class="card-body" id="content">
                 <h4 class="card-title">Anxiety</h4>
                 <p class="card-text">Find out about how anxiety can affect your lifestyle and choice</p>
                 <a href="/pages/empty.html" target="_blank" class="btn btn-primary">Go Now</a>
@@ -81,11 +83,11 @@
 
 
                 <!--Card 2 section-->
-                <div class="container-fluid">
+                <div class="container">
                     <div class="card" style="width:300px">
                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEX9FBfSO3i4wQptiTAf_tnyd2YzQWZYRcjQ&s" 
                       alt="Image" style="width:100%">
-                      <div class="card-body">
+                      <div class="card-body" id="content">
                         <h4 class="card-title">Depression</h4>
                         <p class="card-text">Find out about how depression can affect someones lifestyle</p>
                         <a href="/pages/empty.html" target="_blank" class="btn btn-primary">Go Now</a>
@@ -95,11 +97,11 @@
 
 
                         <!--Card 3 section-->
-                        <div class="container-fluid">
+                        <div class="container">
                             <div class="card" style="width:300px">
                               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcULIsuH661aacpIE8YBPEQFuGyM3hUC2WKw&s" 
                               alt="Image" style="width:100%">
-                              <div class="card-body">
+                              <div class="card-body" id="content">
                                 <h4 class="card-title">OCD</h4>
                                 <p class="card-text">Learn about what OCD is and how to help</p>
                                 <a href="/pages/empty.html" target="_blank" class="btn btn-primary">Go Now</a>
@@ -108,11 +110,11 @@
                           </div>
                           
                                 <!--Card 4 section-->
-                                <div class="container-fluid">
+                                <div class="container">
                                     <div class="card" style="width:300px">
                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg9S8ecsuPfQHawu6_sEkkVKG1FYWXD349cw&s" 
                                       alt="Image" style="width:100%">
-                                      <div class="card-body">
+                                      <div class="card-body" id="content">
                                         <h4 class="card-title">ADHD</h4>
                                         <p class="card-text">What is ADHD and how do I react</p>
                                         <a href="/pages/empty.html" target="_blank" class="btn btn-primary">Go Now</a>
@@ -122,20 +124,20 @@
                                   
  
                                              <!--Accordian 1 section-->
-                                                <div class="col-md-6 mb-4 col-12">
+                                                <div class="col-md-6 mb-4 col-12" id="content">
                                                     <div class="accordion" id="accordionExample">
                                                         <div class="card" id="gethelp">
                                                             <div class="card-header" id="headingOne">
                                                                 <h2 class="mb-0">
                                                                     <button class="btn btn-link" type="button"
                                                                         data-toggle="collapse"
-                                                                        data-target="#collapseOne" aria-expanded="true"
+                                                                        data-target="#collapseOne" aria-expanded="false"
                                                                         aria-controls="collapseOne">
                                                                         Chat with Samaritans
                                                                     </button>
                                                                 </h2>
                                                             </div>
-                                                            <div id="collapseOne" class="collapse show"
+                                                            <div id="collapseOne" class="collapse"
                                                                 aria-labelledby="headingOne"
                                                                 data-parent="#accordionExample">
                                                                 <div class="card-body">
@@ -195,13 +197,13 @@
                                                                     <button class="btn btn-link" type="button"
                                                                         data-toggle="collapse"
                                                                         data-target="#collapseThree"
-                                                                        aria-expanded="true"
+                                                                        aria-expanded="false"
                                                                         aria-controls="collapseThree">
                                                                         Rethink Mental Illness
                                                                     </button>
                                                                 </h2>
                                                             </div>
-                                                            <div id="collapseThree" class="collapse show"
+                                                            <div id="collapseThree" class="collapse"
                                                                 aria-labelledby="headingThree"
                                                                 data-parent="#accordionExample">
                                                                 <div class="card-body">
@@ -250,8 +252,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!--Back to top scroll function-->
     <script>
-        // Show the scroll-to-top button when scrolling down
+        // Show the scroll-to-top button
         window.onscroll = function () {
             const button = document.getElementById("scrollTopBtn");
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -269,6 +272,25 @@
             });
         }
     </script>
+
+<!-- Search bar script -->
+<script>
+    function search() {
+        const content = document.getElementById('content');
+        const searchInput = document.getElementById('searchInput');
+        const searchTerm = searchInput.value.trim();
+
+        // Clear previous highlights
+        content.innerHTML = content.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+
+        if (searchTerm) {
+            // Create a regex to find the search term (case insensitive)
+            const regex = new RegExp(`(${searchTerm})`, 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<span class="highlight">$1</span>');
+        }
+    }
+</script>
+
 </body>
 
 </html>
