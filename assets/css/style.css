@@ -73,6 +73,12 @@ main {
     border: 1px solid skyblue;
 }
 
+/* card section */
+.card {
+    border: 2px solid orange; /* Orange border */
+    margin-bottom: 20px; /* Space between cards */
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
