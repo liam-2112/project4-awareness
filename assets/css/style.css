@@ -10,7 +10,7 @@
 
 /* search on page highlight color */
 .highlight {
-            background-color: yellow; /* Highlight color */
+            background-color: rgb(250, 250, 1); /* Highlight color */
         }
 
 /*general styles*/
@@ -73,11 +73,26 @@ main {
     border: 1px solid skyblue;
 }
 
-/* card section */
-.card {
-    border: 2px solid orange; /* Orange border */
-    margin-bottom: 20px; /* Space between cards */
+/* cards */
+.card-header {
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
 }
+
+.card-body {
+    border: 2px solid skyblue;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+
+/* accordions */
+.card-body2 {
+    border: 2px solid orange;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
 
 /* Form */
 #signup {
