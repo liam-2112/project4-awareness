@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Page</title>
+    <!--Web Tab Name-->
+    <title>HeadSpace | Mental Health Awareness</title>
+    <!--meta tags for search engines-->
+    <meta name="description"
+        content="i need help with myself. am i ill. i want to look at mental health. how to be more aware. help me.">
+    <meta name="keywords" content="mental health, help, awareness, ill, wrong, medical.">
+    <!--favicon image-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Information</h1>
+    <!--Header section-->
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <!--Title on the left-->
+                <a class= "logo-text logo-size mt-2" href="index.html">HeadSpace</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!--Home link-->
+                    <a href="index.html" class="btn btn-primary ml-2 mt-2 d-flex justify-content-around">Home</a>
+                    <!--About us link-->
+                    <a href="aboutus.html" class="btn btn-primary ml-2 mt-2 d-flex justify-content-around">About Us</a>
+                    <!--register link-->
+                    <a href="register.html" class="btn btn-primary ml-2 mt-2 d-flex justify-content-around">Register</a>
+                    <!--link to the accordian section-->
+                    <a href="#gethelp" class="btn btn-danger ml-2 mt-2 d-flex justify-content-around">HELP NOW</a>
+                    <!--Search bar-->
+                    <div class="ml-auto">
+                        <input class="mr-2 mt-2" type="text" id="searchInput" placeholder="Search...">
+                        <button class="btn btn-outline-success" onclick="search()">Search</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--main section-->
+    <main>empty</main>
+
+    <!--footer section-->
+    <footer>
+        <ul id="social-networks">
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i>
+                </a></li>
+            <li><a href="https://www.x.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter"></i>
+                </a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our youtube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube"></i>
+                </a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i>
+                </a></li>
+        </ul>
+        <p id="social-text">© 2024 HeadSpace. All rights reserved.</p>
+    </footer>
+        
+    
+
+    <!-- Font awesome kit -->
+    <script src="https://kit.fontawesome.com/9224d8bcb2.js" crossorigin="anonymous"></script>
+
+    <!--Back to top button on scroll-->
+    <button class="btn btn-primary scroll-top-btn" id="scrollTopBtn">Back to Top</button>
+
+    <!--Bootstrap script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Back to top scroll function-->
+    <script>
+        // Show the scroll-to-top button
+        window.onscroll = function () {
+            const button = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        // Scroll to top function
+        document.getElementById("scrollTopBtn").onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+<!-- Search bar script -->
+<script>
+    function search() {
+        const content = document.getElementById('content');
+        const searchInput = document.getElementById('searchInput');
+        const searchTerm = searchInput.value.trim();
+
+        // Clear previous highlights
+        content.innerHTML = content.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+
+        if (searchTerm) {
+            // Create a regex to find the search term (case insensitive)
+            const regex = new RegExp(`(${searchTerm})`, 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<span class="highlight">$1</span>');
+        }
+    }
+</script>
+
 </body>
+
 </html>
