@@ -69,17 +69,32 @@ main {
 }
 
 /* main heading in body */
+.text-heading-color {
+    color: skyblue;
+}
+
 .main-header {
     border: 1px solid skyblue;
 }
 
 /* cards */
+/* cards top section (images) */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
 .card-header {
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
 }
 
+/* card body section (text) */
 .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 2px solid skyblue;
     border-bottom-left-radius: 2%;
     border-bottom-right-radius: 2%;
@@ -87,6 +102,7 @@ main {
 
 
 /* accordions */
+/* dropdown boxes */
 .card-body2 {
     border: 2px solid orange;
     border-bottom-left-radius: 2%;
