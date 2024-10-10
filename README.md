@@ -51,16 +51,35 @@ information.
 ### Accordians
 On the accordian section there are helplines available with information on these helplines. At the top of the page there is also
 a button that links to this section.
-![Accordian page](/documentation/accordian.png)
+![Accordion page](/documentation/accordion.png)
 
 ### Footer
 This will be the footer section with links to social media and a copyright tag. There will also be a back to top button here which will
 srcoll to the top of the page when clicked.
 ![The Footer](/documentation/footer.png)
 
-### Mobile Design
+## Mobile Design
 I have used bootstrap to make the content shrink down and look good for mobile users.
 
+### M-Home
+This is how the mobile home would look with a navigation bar, search function, and links to more information. It would also include a jumbotron for
+the top section of the page.
+![Home page](/documentation/m-home.png)
+
+### M-Cards
+Here there are mobile cards that have a small picture, with the title of an illness and a brief summary. They would also include a link to the correct
+information.
+![cards page](/documentation/m-cards.png)
+
+### M-Accordians
+On the mobile accordian section there are helplines available with information on these helplines. At the top of the page there is also
+a button that links to this section.
+![Accordion page](/documentation/m-accordion.png)
+
+### M-Footer
+This will be the mobile footer section with links to social media and a copyright tag. There will also be a back to top button here which will
+srcoll to the top of the page when clicked.
+![The Footer](/documentation/m-footer.png)
 
 ### Accessibility Considerations
 I have added alt text to the images for screen readers and i have also included some aria labels.
@@ -77,13 +96,19 @@ I have used a CSS [Validator](https://jigsaw.w3.org/) to get a all clear message
 ![CSS Clear](/documentation/css-check.png)
 
 ### Creditation
-I used a favicon generator by [favicon](https://favicon.io/favicon-generator/)
-Use of w3Schools
-Use of bootstrap
-Use of gitpod and github
+I used a favicon generator by [favicon](https://favicon.io/favicon-generator/).
+Use of w3Schools.
+Use of bootstrap.
+Use of gitpod and github.
+Code institution for some resources and idea's.
+
 
 ### Future Features
-Due to being ill i have ran out of time.
-Future updates to the readme to be implemente.
-Known bugs to be fixed
-Changes to the stlye and small corrections to fix within the code.
+ Future updates to the readme to be implemented.
+ Changes to be made in future updates include;
+- Correct the search bar layout on mobile design.
+- Correct the cards so that they sit aligned on a tablet.
+- Fix the home page search on page funtion.
+- Change/fix the jumbotron/hero image as it has slight distortion.
+- Change the scroll to top button and the bottom of the page to appear in the bottom 
+ right once you start to scroll.
